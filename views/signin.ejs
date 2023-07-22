@@ -1,0 +1,48 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="container">
+
+    <h4>SIGN IN FOR THE CLUBS AND EVENTS</h4>
+
+    <form method="post" action="/signin">
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">NAME</label>
+          <input type="text" class="form-control" id="exampleInputName" name="name">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+          </div>
+
+        <div class="mb-3">
+            <label for="exampleInputclub" class="form-label">enter club/event</label>
+            <input type="text" class="form-control" id="exampleInputclub" name="club">
+          </div> 
+
+          <div class="mb-3">
+            <label for="exampleInputbranch" class="form-label">ENTER YOUR BRANCH</label>
+            <input type="text" class="form-control" id="exampleInputbranch" name="branch">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputphone" class="form-label">phone</label>
+            <input type="text" class="form-control" id="exampleInputPhone" name="phone">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputquery" class="form-label">Any query?</label>
+            <input type="text" class="form-control" id="exampleInputquery" name="query">
+          </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br/>
+      <a class="btn btn-warning" href="/">Go to Home Page</a>
+</div>
